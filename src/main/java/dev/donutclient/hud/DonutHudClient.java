@@ -29,6 +29,9 @@ public class DonutHudClient implements ClientModInitializer {
 
     private static void tick(class_310 mc) {
         if (mc.method_22683() == null) return;
+
+        AutoTyper.tick(mc);
+
         boolean down = GLFW.glfwGetKey(mc.method_22683().method_4490(), GLFW.GLFW_KEY_RIGHT_SHIFT) == GLFW.GLFW_PRESS;
         if (down && !lastKeyDown) {
             class_437 s = mc.field_1755;
